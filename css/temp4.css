@@ -1,0 +1,101 @@
+*{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: linear-gradient( #01022d,#000);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-image: linear-gradient(#01022de5 30%, #00000088),
+    url(/Images/land.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 640px;
+    background-position: center;
+}
+.container:hover{
+    background-image: linear-gradient(#01022de5 30%, transparent),
+    url(/Images/land.jpg);
+    background-size: cover;
+}
+.container header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:767px) {
+    .container header{
+        flex-direction: column;
+    }
+    .container header li{
+        padding: 5px;;
+    }
+    .container .content p{
+        width: 320px !important;
+    }
+}
+.container .logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+.container ul a,
+.container ul a.active{
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container ul a.active{
+    border-bottom: 1px solid #ccc;
+}
+.container ul a:hover{
+    border-bottom: 1px solid #ccc;
+}
+.container .content{
+    width: 50%;
+    padding: 30px;
+    color: white;
+    margin-top: 50px;
+}
+.container .content h2{
+    font-size: 75px;
+    text-transform: uppercase;
+}
+.container .content p{
+    letter-spacing: 3px;
+    width: 350px;
+    padding: 20px 0;
+}
+.container .content a{
+    color: #000;
+    background-color: white;
+    border-radius: 10px;
+    padding: 6px 8px;
+    border: 2px solid transparent;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.container .content a:hover{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
